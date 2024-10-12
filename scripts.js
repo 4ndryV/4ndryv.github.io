@@ -35,7 +35,11 @@ async function searchRecipes(ingredient) {
         const data = await response.json()
         showRecipes(data.meals)
     }   catch (err) {
+            
+
             recipelist.innerHTML = `<p>Nenhuma receita encontrada. </p>`
+            recipedetails.innerHTML =  ""
+
         }
     }    
 
